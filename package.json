@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/cireneirbo/airwinfi#readme",
   "dependencies": {
+    "@types/node": "latest",
     "convict": "latest",
     "ejs": "latest",
     "express": "latest",
@@ -35,7 +36,6 @@
     "@types/express": "latest",
     "@types/helmet": "latest",
     "@types/morgan": "latest",
-    "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "latest",
