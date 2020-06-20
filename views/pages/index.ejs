@@ -22,22 +22,6 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Reference to the Bing Maps SDK -->
-    <script type='text/javascript'
-            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[YOUR_BING_MAPS_KEY]'
-            async defer></script>
-
-    <script type='text/javascript'>
-		function GetMap() {
-			const map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
-			map.setView({
-				mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-				center: new Microsoft.Maps.Location(34.958472, -108.232028),
-				zoom: 18.2
-			});
-		}
-    </script>
-
 </head>
 <body>
 
@@ -55,9 +39,6 @@
 				<li><a href="#elements" class="button">Elements</a></li>
 			</ul>
 		</section>
-
-		<!--Map Container-->
-		<div id="myMap"></div>
 
 		<!-- Container -->
 		<div class="container">
