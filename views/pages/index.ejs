@@ -25,70 +25,25 @@
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="page-item color-normal layout-flip is-loggedOut">
+<body class="page-item color-normal layout-flip">
 	<div id="wrapper">
 
-		<article id="details" class="scrollbarify">
+		<article id="details">
 			<!-- <div class="actions">
 				<div class="toggle" title="Toggle sidebar"></div>
 				<div class="popout" title="Open in new tab"></div>
 				<div class="reload" title="Reload demo"></div>
 			</div> -->
-			<div class="scrollbarify-content">
+			<div>
 				<div class="inner">
 					<header>
-						<h1>Linear</h1>
-						<p>Demo images via <a href="http://unsplash.com" class="offsite" target="_blank">Unsplash</a>.</p>
+						<h1 style="color: #ff385c">airwinfi</h1>
+						<p>Free or low-cost WiFi hotspots near you!</p>
 					</header>
-					<section class="properties">
-						<dl>
-							<dt data-row="category">Category</dt>
-							<dd data-row="category">Anything</dd>
-							<dt data-row="layouts">Page Layouts</dt>
-							<dd data-row="layouts">
-								<ul class="layouts">
-									<li data-name="index" class="active"><span class="layout">Homepage</span></li>
-									<li data-name="generic"><span class="layout">Generic</span></li>
-								</ul>
-							</dd>
-							<dt data-row="sizes">Device Sizes</dt>
-							<dd data-row="sizes">
-								<ul class="sizes">
-									<li data-name="desktop" class="active"><span class="size desktop">Desktop</span></li>
-									<li data-name="tablet-landscape"><span class="size tablet-landscape">Tablet</span></li>
-									<li data-name="tablet-portrait"><span class="size tablet-portrait">Tablet (Portrait)</span></li>
-									<li data-name="mobile-portrait"><span class="size mobile-portrait">Mobile</span></li>
-								</ul>
-							</dd>
-						</dl>
-					</section>
 					<section class="downloads">
-						<h2>Downloads</h2>
-						<p class="message"><a href="/signup">Sign up</a> for unlimited access to our entire collection of <strong>95</strong> templates (including this one).</p>
-						<ul class="versions">
-							<li data-name="html">
-								<div class="details">
-									<h3>HTML Template</h3>
-									<ul>
-										<li>3.17MB</li>
-										<li data-action="toggle-description" class="active">Details</li>
-									</ul>
-								</div>
-								<a href="/signup" class="button small">Sign Up + Download</a>
-								<p class="description active"> A responsive website template built with standards-compliant HTML and CSS. Includes HTML files, stylesheets, all supporting image and JS assets, and optional <a href="http://www.sass-lang.com/" target="_blank">Sass</a> sources. </p>
-							</li>
-							<li data-name="psd">
-								<div class="details">
-									<h3>PSD Files</h3>
-									<ul>
-										<li>40.83MB</li>
-										<li data-action="toggle-description" class="active">Details</li>
-									</ul>
-								</div>
-								<a href="/signup" class="button small">Sign Up + Download</a>
-								<p class="description active"> Mockup and asset PSDs for this design. Requires Adobe Photoshop CS6 or later. </p>
-							</li>
-						</ul>
+						<h2>Results</h2>
+						<p class="message">Move the map to refresh the search results.</p>
+						<ul id="results" class="versions"></ul>
 					</section>
 				</div>
 			</div>
@@ -104,7 +59,7 @@
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&libraries=places&callback=googleMapsResponseHandler"></script>
 
 	<!-- Scripts -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js" type="module"></script>
 
 	<!-- Inline Script -->
 	<script></script>
