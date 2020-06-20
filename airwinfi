@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+console.log();
+console.log("process.cwd(): " + process.cwd());
+console.log("__dirname: " + __dirname);
+console.log();
+console.log("typeRoots: " + require("path").join(__dirname, "node_modules", "@types"));
+console.log();
+
 require("ts-node").register({
 	"ignore": [/\.js/],
 	"typeRoots": ["./node_modules/@types"],
