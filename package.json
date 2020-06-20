@@ -1,0 +1,45 @@
+{
+  "name": "airwinfi",
+  "version": "1.0.0",
+  "description": "A site that shows you where you can get free internet or internet paired with the cheapest menu item at the business.",
+  "bin": "airwinfi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch \"**/*.ts\" --exec ts-node server.ts",
+    "build": "rollup --config --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cireneirbo/airwinfi.git"
+  },
+  "author": "Eric O'Brien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cireneirbo/airwinfi/issues"
+  },
+  "homepage": "https://github.com/cireneirbo/airwinfi#readme",
+  "dependencies": {
+    "convict": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "helmet": "latest",
+    "morgan": "latest",
+    "nodemon": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "latest",
+    "@types/convict": "latest",
+    "@types/ejs": "latest",
+    "@types/express": "latest",
+    "@types/helmet": "latest",
+    "@types/morgan": "latest",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "rollup": "latest",
+    "tslib": "latest"
+  }
+}
