@@ -1,5 +1,9 @@
+import { config } from "../config";
+
 export function get(request, response) {
-	response.render("pages/index");
+	response.render("pages/index", {
+		"googleMapsApiKey": config.get("googleMapsApiKey")
+	});
 }
 
 // Example route with a URL parameter and middleware:

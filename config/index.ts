@@ -65,9 +65,10 @@ const flattenedOptions = {
 				let namespace;
 
 				if (file === "index.ts") {
-					namespace = directory.substring(__dirname.length + 1).split(/\//g);
+					// FIXME: Make regex cross-platform
+					namespace = directory.substring(__dirname.length + 1).split(/\\/g);
 				} else {
-					namespace = [...directory.substring(__dirname.length + 1).split(/\//g), path.basename(file, path.extname(file))];
+					namespace = [...directory.substring(__dirname.length + 1).split(/\\/g), path.basename(file, path.extname(file))];
 				}
 
 				convictify(require(path.join(directory, file))["default"], namespace);
