@@ -108,7 +108,7 @@ globalThis.googleMapsResponseHandler = function() {
 			// Clear old markers
 
 			for (const marker of markers) {
-				marker.setMap(null);
+				marker["marker"].setMap(null);
 			}
 
 			function resultsHandler(results, pinColor) {
