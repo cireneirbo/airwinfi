@@ -39,4 +39,5 @@ Contact either contributor via the email address listed on their github landing 
 <b>Who maintains and contributes to the project</b>
 
 https://github.com/brianjenkins94
+<br>
 https://github.com/cireneirbo
